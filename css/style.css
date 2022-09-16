@@ -165,15 +165,22 @@ a {
   align-items: center;
 }
 
-.contacts-item:first-child {
+.contacts-icon-header:first-child {
   margin-right: 50px;
 }
+
 
 .contacts-item {
   color: inherit;
   font-weight: 500;
   line-height: 0.07;
   letter-spacing: 0.02em;
+  margin-left: 10px;
+}
+
+.contacts-icon-header:hover,
+.contacts-icon-header:focus{
+  fill: var(--accent-color);
 }
 
 .contacts-item:hover,
@@ -183,6 +190,7 @@ a {
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
+
 
 /* HERO */
 /*index-main-content*/
@@ -369,6 +377,27 @@ a {
   margin-right: 30px;
   margin-left: 30px;
 }
+
+.snw-link-team:hover,
+.snw-link-team:focus{
+  fill:var(--accent-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
