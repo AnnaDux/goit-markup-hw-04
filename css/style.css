@@ -8,7 +8,7 @@
   --bg-darkness: #f5f4fa;
   --contacts-footer: rgba(255, 255, 255, 0.6);
   --black: #000000;
-  --icons-color:#AFB1B8;
+  --icons-color: #afb1b8;
 }
 
 body {
@@ -170,7 +170,6 @@ a {
   margin-right: 50px;
 }
 
-
 .contacts-item {
   color: inherit;
   font-weight: 500;
@@ -180,7 +179,7 @@ a {
 }
 
 .contacts-icon-header:hover,
-.contacts-icon-header:focus{
+.contacts-icon-header:focus {
   fill: var(--accent-color);
   color: var(--accent-color);
 }
@@ -193,7 +192,6 @@ a {
   color: var(--accent-color);
 }
 
-
 /* HERO */
 /*index-main-content*/
 /* SECTION 1 */
@@ -205,21 +203,20 @@ a {
   min-height: 600px;
   text-align: center;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 
-.hero-bg-img{
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg); 
-  background-repeat:no-repeat;
+.hero-bg-img {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-img.jpg);
+  background-repeat: no-repeat;
   background-position: center;
   max-width: 1600px;
   width: 100%;
-  height: 600px; 
+  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
-
 }
-
 
 .hero-title {
   font-weight: 900;
@@ -275,17 +272,16 @@ a {
   display: inline-flex;
 }
 
-.bg-icon-advances{
+.bg-icon-advances {
   width: 270px;
   height: 120px;
-  background: #F5F4FA;
+  background: #f5f4fa;
   border-radius: 4px;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
 }
-
 
 .advances-title {
   font-size: 14px;
@@ -319,10 +315,7 @@ a {
   margin-right: 30px;
 }
 
-                                    
-
-
-                                  /* SECTION ABOUT TEAM */
+/* SECTION ABOUT TEAM */
 .section-about-team {
   background-color: var(--bg-darkness);
   min-height: 648px;
@@ -338,7 +331,7 @@ a {
 }
 
 .team {
-  display: flex; 
+  display: flex;
 }
 
 .team-case {
@@ -371,7 +364,7 @@ a {
   margin-bottom: 16px;
 }
 
-.team-flex-container{
+.team-flex-container {
   display: flex;
   justify-content: center;
   padding-bottom: 15px;
@@ -379,66 +372,59 @@ a {
   padding-right: 32px;
 }
 
-.team-link{
+.team-link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
-  margin-bottom:15px;
+  margin-bottom: 15px;
   border-radius: 50%;
   background-color: var(--bg-white);
-
-
 }
 
-.team-link:not(:last-child){
+.team-link:not(:last-child) {
   margin-right: 10px;
 }
 
-.team-icon{
+.team-icon {
   fill: var(--icons-color);
 }
-
 
 .team-link:hover,
 .team-link:focus,
 .team-icon:hover,
-.team-icon:focus
-{
+.team-icon:focus {
   background-color: var(--accent-color);
   fill: var(--bg-white);
 }
 
 .team-link:hover .team-icon,
-.team-link:focus .team-icon
-{
-fill: var(--bg-white); 
+.team-link:focus .team-icon {
+  fill: var(--bg-white);
 }
 
-
-
-                                                  /* CLIENTS */
-.clients{
-  background-color:var(--bg-white) ;
+/* CLIENTS */
+.clients {
+  background-color: var(--bg-white);
   margin-top: 0;
 }
 
-.client-title{
-font-size: 36px;
-line-height: 42px;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--secondary-text);
-margin-bottom: 50px;
+.client-title {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text);
+  margin-bottom: 50px;
 }
 
-.clients-list{
+.clients-list {
   display: flex;
   justify-content: center;
 }
 
-.clients-item{
+.clients-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -449,33 +435,30 @@ margin-bottom: 50px;
   padding: 0;
 }
 
-.clients-item:not(:last-child){
-  margin-right:  30px;
+.clients-item:not(:last-child) {
+  margin-right: 30px;
 }
 
-.clients-link{
+.clients-link {
   margin: 0 auto;
   fill: var(--icons-color);
 }
 
 .clients-item:hover,
-.clients-item:focus{
+.clients-item:focus {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
 }
 
 .clients-item:hover .clients-link,
-.clients-item:focus .clients-link{
+.clients-item:focus .clients-link {
   fill: var(--accent-color);
 }
-
 
 .clients-link:hover,
-.clients-link:focus{
+.clients-link:focus {
   fill: var(--accent-color);
 }
-
-
 
 /* PROJECTS */
 /*portfolio-main-content*/
@@ -563,12 +546,8 @@ margin-bottom: 50px;
   color: var(--bg-white);
 }
 
-                                      /* FOOTER */
+/* FOOTER */
 
-
-
-
-                                      
 .footer {
   background-color: var(--bg-dark);
   min-width: 1600px;
@@ -633,4 +612,3 @@ address {
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
-
