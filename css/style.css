@@ -209,7 +209,7 @@ a {
 }
 
 .hero-bg-img{
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg); 
   background-repeat:no-repeat;
   background-position: center;
   max-width: 1600px;
@@ -418,13 +418,6 @@ fill: var(--bg-white);
 
 
 
-
-
-
-
-
-
-
                                                   /* CLIENTS */
 .clients{
   background-color:var(--bg-white) ;
@@ -440,53 +433,49 @@ color: var(--secondary-text);
 margin-bottom: 50px;
 }
 
-
-.clients-icon{
+.clients-list{
   display: flex;
- 
+  justify-content: center;
 }
 
-.bg-clients-icon{
-  width: 170px;
-  height: 92px;
-  border: 1px solid #AFB1B8;
-  border-radius: 4px;
+.clients-item{
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-
-.bg-clients-icon:not(:last-child){
-  margin-right: 30px;
-
-}
-
-.clients-icon{
-  width: 106;
-  height: 60;
-  fill: #AFB1B8;
-  margin: 30px;
-}
-
-.bg-clients-icon :hover,
-.bg-clients-icon :focus{
   width: 170px;
   height: 92px;
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+  padding: 0;
+}
+
+.clients-item:not(:last-child){
+  margin-right:  30px;
+}
+
+.clients-link{
+  margin: 0 auto;
+  fill: var(--icons-color);
+}
+
+.clients-item:hover,
+.clients-item:focus{
   border: 1px solid var(--accent-color);
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-
-.clients-icon:hover,
-.clients-icon:focus
-{
   fill: var(--accent-color);
 }
+
+.clients-item:hover .clients-link,
+.clients-item:focus .clients-link{
+  fill: var(--accent-color);
+}
+
+
+.clients-link:hover,
+.clients-link:focus{
+  fill: var(--accent-color);
+}
+
+
 
 /* PROJECTS */
 /*portfolio-main-content*/
@@ -576,7 +565,10 @@ margin-bottom: 50px;
 
                                       /* FOOTER */
 
-/* FOOTER */
+
+
+
+                                      
 .footer {
   background-color: var(--bg-dark);
   min-width: 1600px;
