@@ -8,6 +8,7 @@
   --bg-darkness: #f5f4fa;
   --contacts-footer: rgba(255, 255, 255, 0.6);
   --black: #000000;
+  --icons-color:#AFB1B8;
 }
 
 body {
@@ -181,6 +182,7 @@ a {
 .contacts-icon-header:hover,
 .contacts-icon-header:focus{
   fill: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .contacts-item:hover,
@@ -336,7 +338,7 @@ a {
 }
 
 .team {
-  display: inline-flex;
+  display: flex; 
 }
 
 .team-case {
@@ -346,7 +348,6 @@ a {
   border-radius: 0px 0px 4px 4px;
   width: 270px;
   min-height: 368px;
- 
 }
 
 .team-case:not(:last-child) {
@@ -370,28 +371,50 @@ a {
   margin-bottom: 16px;
 }
 
-
-.snw-icons-team{
+.team-flex-container{
   display: flex;
-  margin-bottom: 30px;
-  margin-right: 30px;
-  margin-left: 30px;
+  justify-content: center;
+  padding-bottom: 15px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
-.snw-link-team:hover,
-.snw-link-team:focus{
-  fill:var(--accent-color);
+.team-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom:15px;
+  border-radius: 50%;
+  background-color: var(--bg-white);
+
+
+}
+
+.team-link:not(:last-child){
+  margin-right: 10px;
+}
+
+.team-icon{
+  fill: var(--icons-color);
 }
 
 
+.team-link:hover,
+.team-link:focus,
+.team-icon:hover,
+.team-icon:focus
+{
+  background-color: var(--accent-color);
+  fill: var(--bg-white);
+}
 
-
-
-
-
-
-
-
+.team-link:hover .team-icon,
+.team-link:focus .team-icon
+{
+fill: var(--bg-white); 
+}
 
 
 
@@ -431,19 +454,39 @@ margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
-.bg-clients-icon:not(last-child){
+
+.bg-clients-icon:not(:last-child){
   margin-right: 30px;
 
 }
 
-
-.client-item{
+.clients-icon{
+  width: 106;
+  height: 60;
   fill: #AFB1B8;
+  margin: 30px;
 }
 
+.bg-clients-icon :hover,
+.bg-clients-icon :focus{
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.clients-icon:hover,
+.clients-icon:focus
+{
+  fill: var(--accent-color);
+}
 
 /* PROJECTS */
 /*portfolio-main-content*/
