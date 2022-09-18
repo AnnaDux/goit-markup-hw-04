@@ -440,8 +440,15 @@ a {
 }
 
 .clients-link {
+
   margin: 0 auto;
   fill: var(--icons-color);
+}
+
+
+.clients-link svg{
+  width: 170px;
+  height: 92px;
 }
 
 .clients-item:hover,
