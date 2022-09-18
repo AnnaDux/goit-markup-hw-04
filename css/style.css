@@ -546,6 +546,13 @@ a {
   color: var(--bg-white);
 }
 
+
+
+
+
+
+
+
 /* FOOTER */
 
 .footer {
@@ -554,11 +561,23 @@ a {
   width: 100%;
   min-height: 252px;
 }
-.footer .container {
+
+.footer-content{
+  display: flex;
+}
+
+.footer-content-left{
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  padding-top: 60px;
+  margin-right: 70px;
+  max-width: 231px;
+
 }
-.logo-web-footer {
+
+.logo-web-footer{
+  padding-bottom: 20px;
   width: 145px;
   min-height: 31px;
   font-family: 'Raleway';
@@ -566,13 +585,13 @@ a {
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
-  padding-top: 30px;
-  margin-top: 30px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  align-items: center;
+
 }
+
 .logo-studio-footer {
+  margin-bottom: 20px;
+  width: 145px;
+  min-height: 31px;
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -580,23 +599,32 @@ a {
   color: var(--bg-white);
   margin-bottom: 20px;
 }
-address {
+
+
+.address-block{
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
-.address {
+
+.address-item:not(:last-child){
   margin-bottom: 9px;
 }
-.address-text {
+
+
+.contacts-item-footer {
   line-height: 1.71;
   color: var(--bg-white);
   font-style: normal;
-  margin-bottom: 9px;
+  color: var(--contacts-footer);
 }
-.contacts-footer :not(:last-child) {
-  margin-top: 0;
-  margin-bottom: 9px;
+
+.footer-map{
+  line-height: 1.71;
+  color: var(--bg-white);
+  font-style: normal;
 }
+
 .contacts-item-footer {
   font-style: normal;
   font-weight: 400;
@@ -611,4 +639,50 @@ address {
   line-height: 0.07;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+} 
+
+.footer-content-right{
+  width: 206px;
+  height: 80px;
+  padding-top: 72px;
 }
+
+.footer-title-right{
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--bg-white);
+margin-bottom: 20px;
+}
+
+.footer-items-right{
+  width: 206px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  fill: var(--bg-white);
+}
+
+.footer-link:not(:last-child){
+  margin-right: 10px;
+}
+
+
+.footer-link:hover,
+.footer-link:focus{
+  background-color: var(--accent-color);
+
+
+}
+
